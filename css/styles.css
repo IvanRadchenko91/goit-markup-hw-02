@@ -1,15 +1,14 @@
 :root {
 	--heder-logo-color: #2196f3;
 	--heder-logo-color-sub: #000000;
-	--nav-color: #212121;
 	--nav-link-hover-focus: #2196f3;
 	--heder-mail-tel: #757575;
 	--heder-mail-tel-hover-focus: #2196f3;
 	--main-background-color: #212121;
 	--main-title: #ffffff;
 	--main-text-btn-color: #ffffff;
-	--main-btn-background-color: #2196f3;
-	--secondary-sub-title-color: #212121;
+	--main-btn-background-color: #2f303a;
+	--main-btn-background-color-hover-focus: #2196f3;
 	--secondary-text-color: #757575;
 	--footer-background-color: #2f303a;
 	--footer-logo: #2196f3;
@@ -21,11 +20,12 @@
 	--portfolio-btn-background: #f5f4fa;
 	--portfolio-btn-color-hover-focus: #ffffff;
 	--portfolio-btn-background-hover-focus: #2196f3;
-	--portfolio-title: #212121;
 	--portfolio-text: #757575;
 }
 body {
 	font-family: "Roboto", sans-serif;
+	color: #212121;
+	background-color: #ffffff;
 }
 .list {
 	list-style: none;
@@ -51,7 +51,7 @@ body {
 	font-size: 14px;
 	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
-	color: var(--nav-color);
+	color: #212121;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -114,10 +114,14 @@ body {
 	line-height: calc(30 / 16);
 	color: var(--main-text-btn-color);
 	cursor: pointer;
-	background-color: var(--main-btn-background-color);
+	background: var(--main-btn-background-color);
 	border-radius: 4px;
+	border-color: transparent;
 }
-
+.main-btn:hover,
+.main-btn:focus {
+	background: var(--main-btn-background-color-hover-focus);
+}
 /* secondary */
 
 .secondary-sub-title {
@@ -126,7 +130,6 @@ body {
 	line-height: calc(16 / 14);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--secondary-sub-title-color);
 }
 .secondary-text {
 	font-weight: 400;
@@ -141,15 +144,18 @@ body {
 	font-size: 36px;
 	line-height: calc(42 / 36);
 	letter-spacing: 0.03em;
-	color: var(--secondary-sub-title-color);
+	text-align: center;
 }
 /* comanda */
+.comanda {
+	background-color: #f5f4fa;
+}
 .comanda-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: calc(42 / 36);
 	letter-spacing: 0.03em;
-	color: var(--secondary-sub-title-color);
+	text-align: center;
 }
 .comanda-sub-title {
 	font-weight: 500;
@@ -217,10 +223,6 @@ body {
 .footer-tel-link:focus,
 .footer-mail-link:hover,
 .footer-mail-link:focus {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.02em;
 	color: var(--footer-mail-map-tel-link-focus-hover);
 }
 /*  =========================FOOTER=========================  */
